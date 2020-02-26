@@ -19,7 +19,7 @@ def readmethod(path):
     dict :
         list of method file key-value pairs
     """
-    with open(method, mode='r', encoding='ascii') as f:
+    with open(path, mode='r', encoding='ascii') as f:
         data = f.read()
     data = data.split('##')
     data = [x.splitlines() for x in data]
